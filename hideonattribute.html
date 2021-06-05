@@ -1,0 +1,26 @@
+<!-- THIS FILE ALLOWS A USER TO HIDE CONTENT ON BTN CLICK BY ATTRIBUTE-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <a href="#">This is a test link</a>
+    <br>
+    <button type="submit" id="hideBtn">Hide</button>
+</div>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $("#hideBtn");
+    if(btn.length)
+    {
+        btn.on('click', () =>{
+            $("[href]").hide();
+        });
+    }
+});
+</script>
