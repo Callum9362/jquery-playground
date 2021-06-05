@@ -1,0 +1,27 @@
+<!-- THIS FILE ALLOWS A USER TO SHOW CONTENT ON BTN CLICK-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <span style="display:none;">Now you see me</span>
+    <span style="display:none;">Now you see me</span>
+    <br>
+    <button type="submit" id="showBtn">Show</button>
+</div>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $("#showBtn");
+    if(btn.length)
+    {
+        btn.on('click', () =>{
+            $("span").show();
+        });
+    }
+});
+</script>
