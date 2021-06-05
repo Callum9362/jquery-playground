@@ -1,0 +1,26 @@
+<!-- THIS FILE ALLOWS A USER TO SLIDE UP CONTENT ON BTN CLICK BY ATTRIBUTE-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<button type="submit" id="slideBtn">Slide Up</button>
+<div>
+    <span>This is some content</span>
+</div>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $("#slideBtn");
+    if(btn.length)
+    {
+        btn.on('click', () =>{
+            // You can pass parameters to fadeOut such as fadeOut("slow")
+            $("div").slideUp();
+        });
+    }
+});
+</script>
