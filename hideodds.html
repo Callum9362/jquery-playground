@@ -1,0 +1,76 @@
+<!-- THIS FILE ALLOWS A USER TO HIDE ODD CONTENT ON BTN CLICK -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+            <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          </tr>
+      </table>
+    <button type="submit" id="hideBtn">Hide</button>
+</div>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $("#hideBtn");
+    if(btn.length)
+    {
+        btn.on('click', () =>{
+            $("tr:odd").hide();
+        });
+    }
+});
+</script>
