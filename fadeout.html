@@ -1,0 +1,25 @@
+<!-- THIS FILE ALLOWS A USER TO FADE OUT CONTENT ON BTN CLICK BY ATTRIBUTE-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <span>This is some content</span>
+</div>
+<button type="submit" id="hideBtn">Fade</button>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $("#hideBtn");
+    if(btn.length)
+    {
+        btn.on('click', () =>{
+            $("div").fadeOut();
+        });
+    }
+});
+</script>
