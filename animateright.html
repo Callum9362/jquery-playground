@@ -1,0 +1,25 @@
+<!-- THIS FILE ALLOWS A USER TO ANIMATE TO THE RIGHT CONTENT ON BTN CLICK-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="coolDiv">
+        <span>This is some content</span>
+    </div>
+    <button type="submit" id="animateBtn">Animate Right</button>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $("#animateBtn");
+    if(btn.length)
+    {
+        btn.on('click', () =>{
+            $("#coolDiv").animate({left: '500px'});
+        });
+    }
+});
+</script>
