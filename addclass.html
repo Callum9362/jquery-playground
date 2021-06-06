@@ -1,0 +1,28 @@
+<!-- THIS FILE ALLOWS A USER TO ADD A CSS CLASS TO CONTENT ON BTN CLICK-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <span class="color">Change me</span>
+    <br>
+    <span class="color">Change me</span>
+    <br>
+    <button type="submit" class="colorBtn" id="GreenBtn">Green</button>
+</div>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $(".colorBtn");
+    if(btn.length > 0)
+    {
+        btn.on('click', () =>{
+            $(".color").css('color', 'green');
+        });
+    }
+});
+</script>
