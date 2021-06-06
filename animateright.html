@@ -5,10 +5,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="coolDiv">
-        <span>This is some content</span>
+    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+    <div>
+        <button type="submit" id="animateBtn">Animate Right</button>
     </div>
-    <button type="submit" id="animateBtn">Animate Right</button>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;margin-bottom: 50px;"></div>
+    <br>
 </body>
 </html>
 <script>
@@ -18,7 +20,7 @@ $(document).ready(() =>
     if(btn.length)
     {
         btn.on('click', () =>{
-            $("#coolDiv").animate({left: '500px'});
+            $("div").animate({left: '500px'});
         });
     }
 });
