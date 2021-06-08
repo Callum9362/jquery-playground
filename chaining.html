@@ -1,0 +1,25 @@
+<!-- THIS FILE DEMO CHAINING JQUERY FUNCS ON BTN CLICK BY ATTRIBUTE-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <p id="p1">This is some content</span>
+</div>
+<button type="submit" id="hideBtn">Go</button>
+</body>
+</html>
+<script>
+$(document).ready(() =>
+{
+    const btn = $("#hideBtn");
+    if(btn.length)
+    {
+        btn.on('click', () =>{
+            $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+        });
+    }
+});
+</script>
