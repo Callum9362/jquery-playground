@@ -1,0 +1,21 @@
+<!-- THIS FILE GIVES AN EXAMPLE OF APPENDING HTML-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("ul.wishList").append("<li>New blender</li>");
+  });
+});
+</script>
+</head>
+<body>
+
+  <ul class="wishList">My Wish List</ul>`<br>
+
+<button>Append</button>
+
+</body>
+</html>
